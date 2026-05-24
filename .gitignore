@@ -1,0 +1,58 @@
+# Data — never commit raw or processed survey data
+data/*.xlsx
+data/*.csv
+data/*.parquet
+data/*.json
+data/*.tsv
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Model caches (BART, spaCy, etc. — large)
+.cache/
+~/.cache/
+transformers_cache/
+
+# Generated outputs that shouldn't be tracked
+*.log
+*.tmp
+*.bak

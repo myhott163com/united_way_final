@@ -1,12 +1,25 @@
-pandas>=1.5
-numpy>=1.23
+# Core data stack
+pandas>=1.5,<3.0
+numpy>=1.23,<2.0
 openpyxl>=3.0
-scikit-learn>=1.1
 scipy>=1.9
+
+# Statistical and ML modeling
+scikit-learn>=1.1,<2.0
+
+# Visualization
 matplotlib>=3.6
 wordcloud>=1.9
+
+# NLP — zero-shot classification + NER
 transformers>=4.30
 torch>=2.0
 spacy>=3.5
+
+# Geospatial — for the title-map figure only;
+# safe to omit if not regenerating that figure
 geopandas>=0.13
 shapely>=2.0
+
+# After install, also run:
+#   python -m spacy download en_core_web_sm
